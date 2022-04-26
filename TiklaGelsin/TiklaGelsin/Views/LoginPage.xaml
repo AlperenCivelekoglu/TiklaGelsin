@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:TiklaGelsin.ViewModels"
+             mc:Ignorable="d"
+             x:Class="TiklaGelsin.Views.LoginPage"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.Content>
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Frame Grid.Column="0" Grid.ColumnSpan="1" Grid.Row="0" Grid.RowSpan="1" CornerRadius="30" Margin="0,0,0,0"  HasShadow="True" Scale="0.95"  >
+                <Image Source="tiklagelsinanasayfa" ScaleX="5" ScaleY="4.5" >
+
+                </Image>
+            </Frame>
+
+            <Label Text="Hoş Geldiniz" Grid.Column="0" Grid.Row="1" FontSize="25" Margin="120,25,0,0">
+
+            </Label>
+
+            <Frame Grid.Column="0" Grid.ColumnSpan="1" Grid.Row="2" Grid.RowSpan="1" CornerRadius="30" Margin="0,0,0,0"  HasShadow="True" Scale="0.95"  >
+
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_Sanagelsin"/>
+                </Frame.GestureRecognizers>
+
+                <Image Source="Sanagelsin.png" ScaleX="2" ScaleY="2" >
+
+                </Image>
+            </Frame>
+
+            <Frame Grid.Column="0" Grid.ColumnSpan="1" Grid.Row="3" Grid.RowSpan="1" CornerRadius="30" Margin="0,0,0,0"  HasShadow="True" Scale="0.95"  >
+
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_Gelal"/>
+                </Frame.GestureRecognizers>
+
+                <Image Source="Restorandahizlisiparis.png" ScaleX="2.8" ScaleY="2" >
+
+                </Image>
+            </Frame>
+
+            <Frame Grid.Column="0" Grid.ColumnSpan="1" Grid.Row="4" Grid.RowSpan="1" CornerRadius="30" Margin="0,0,0,0"  HasShadow="True" Scale="0.95"  >
+
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_QRuret"></TapGestureRecognizer>
+                </Frame.GestureRecognizers>
+
+                <Image Source="QRuret.png" ScaleX="2.5" ScaleY="2" >
+
+                </Image>
+            </Frame>
+
+            <Grid Grid.Row="5">
+                <Button   Text="Giriş Yap"  Clicked="Btn_giris_Clicked"
+                BackgroundColor="#FFFFFF"  WidthRequest="150" HeightRequest="40"
+                CornerRadius="52" VerticalOptions="Center" HorizontalOptions="Start" 
+                TextColor="Red" FontAttributes="Bold" Margin="0,5,0,0" Command="{Binding LoginCommand}"/>
+
+                <Button  Clicked="Btn_kayıt_Clicked"   Text="Kayıt Ol"  
+                BackgroundColor="#eb002f"  WidthRequest="150" HeightRequest="40"
+                CornerRadius="52" VerticalOptions="Center" HorizontalOptions="End" 
+                TextColor="White" FontAttributes="Bold" Margin="0,15,0,0" Command="{Binding LoginCommand}"/>
+            </Grid>
+
+
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>

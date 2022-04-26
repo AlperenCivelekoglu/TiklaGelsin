@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TiklaGelsin.Views.AnaSayfaSanaGelsin">
+    <ScrollView HeightRequest="2000">
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="55"/>
+                <RowDefinition Height="280"/>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="280"/>
+                <RowDefinition Height="280"/>
+                <RowDefinition Height="280"/>
+                <RowDefinition Height="280"/>
+                <RowDefinition Height="280"/>
+                <RowDefinition Height="280"/>
+                <RowDefinition Height="280"/>
+                <RowDefinition Height="280"/>
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0"  Grid.Row="0"  Margin="-50,0,20,0" Scale="0.9" BackgroundColor="Transparent" 
+                ImageSource="back2.png" Clicked="Button_Clicked"
+               
+                 >
+            </Button>
+
+            <Image Grid.Column="1"  Grid.Row="0" Source="tiklagelsinlogo.png" Scale="0.8">
+
+            </Image>
+
+            <Button Grid.Column="2"  Grid.Row="0"  Margin="0,0,-120,0" Scale="0.8" BackgroundColor="Transparent" ImageSource="sepetim1kck.png"
+                    Clicked="Button_Clicked_1">
+
+            </Button>
+
+            <Frame Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="1" CornerRadius="40" Scale="0.9" ScaleY="0.9" Margin="0,0,0,0" HasShadow="True" BackgroundColor="#F8F7F8">
+                <StackLayout>
+                    <CarouselView x:Name="MainCarouselView" PeekAreaInsets="50" >
+                        <CarouselView.ItemTemplate>
+                            <DataTemplate>
+                                <Image Source="{Binding .}"  ScaleX="1.2" ScaleY="1."/>
+                                <!--<Label Text="{Binding .}"
+                           FontSize="60" />-->
+                            </DataTemplate>
+                        </CarouselView.ItemTemplate>
+
+                    </CarouselView>
+                </StackLayout>
+            </Frame>
+
+
+            <Label Text="Seçtğin adrese göre sipariş " Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="2" HorizontalOptions="Center" 
+               FontSize="25" TextColor="#473f3f" FontAttributes="Bold" Margin="0,25,0,0"/>
+
+            <Label Text="verebileceğin restoranlar " Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="3" HorizontalOptions="Center" 
+               FontSize="25" TextColor="#473f3f" FontAttributes="Bold" Margin="0,0,0,10"/>
+
+            <Frame Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="4" CornerRadius="40" Scale="0.9" ScaleY="0.9" Margin="0,0,0,0" HasShadow="True">
+                <Image Source="Burgerkinglogo.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" ScaleY="1.3" ScaleX="1.3" Margin="0,0,0,30">
+
+                </Image>
+
+
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Frame.GestureRecognizers>
+
+
+            </Frame>
+
+            <Frame Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="5" CornerRadius="40" Scale="0.9" ScaleY="0.9" Margin="0,0,0,0" HasShadow="True">
+                <Image Source="popeyes.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" ScaleY="1.2" ScaleX="1.3" Margin="0,0,0,30">
+
+                </Image>
+
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped1"/>
+                </Frame.GestureRecognizers>
+            </Frame>
+
+            <Frame Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="6" CornerRadius="40" Scale="0.9" ScaleY="0.9" Margin="0,0,0,0" HasShadow="True">
+                <Image Source="sbarro.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" ScaleY="1.2" ScaleX="1.3" Margin="0,0,0,30">
+
+                </Image>
+
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped2"/>
+                </Frame.GestureRecognizers>
+            </Frame>
+
+            <Frame Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="7" CornerRadius="40" Scale="0.9" ScaleY="0.9" Margin="0,0,0,0" HasShadow="True">
+                <Image Source="ustadonerci.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" ScaleY="1.2" ScaleX="1.2" Margin="0,0,0,30">
+
+                </Image>
+
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped3"/>
+                </Frame.GestureRecognizers>
+            </Frame>
+
+            <Frame Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="8" CornerRadius="40" Scale="0.9" ScaleY="0.9" Margin="0,0,0,0" HasShadow="True">
+                <Image Source="ustapideci.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" ScaleY="1.2" ScaleX="1.2" Margin="0,0,0,30">
+
+                </Image>
+
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped4"/>
+                </Frame.GestureRecognizers>
+            </Frame>
+
+            <Frame Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="9" CornerRadius="40" Scale="0.9" ScaleY="0.9" Margin="0,0,0,0" HasShadow="True">
+                <Image Source="arbys3.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" ScaleY="1.2" ScaleX="1.3" Margin="0,0,0,30">
+
+                </Image>
+            </Frame>
+
+            <Frame Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="10" CornerRadius="40" Scale="0.9" ScaleY="0.9" Margin="0,0,0,0" HasShadow="True">
+                <Image Source="amasyaet.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" ScaleY="1.2" ScaleX="1.3" Margin="0,0,0,30">
+
+                </Image>
+            </Frame>
+
+            <Frame Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="11" CornerRadius="40" Scale="0.9" ScaleY="0.9" Margin="0,0,0,0" HasShadow="True">
+                <Image Source="Milgo.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" ScaleY="1.2" ScaleX="1.3" Margin="0,0,0,30">
+
+                </Image>
+            </Frame>
+
+        </Grid>
+
+    </ScrollView>
+</ContentPage>

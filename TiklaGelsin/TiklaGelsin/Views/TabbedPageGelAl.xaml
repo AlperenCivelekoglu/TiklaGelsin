@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:TiklaGelsin="clr-namespace:TiklaGelsin.Views"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            x:Class="TiklaGelsin.Views.TabbedPageGelAl">
+    <!--Pages can be added as references or inline-->
+
+    <TiklaGelsin:AnaSayfaGelAl Title="Ana Sayfa" IconImageSource=""></TiklaGelsin:AnaSayfaGelAl>
+    <TiklaGelsin:KampanyalarGelAl Title="Kampanyalar" IconImageSource=""></TiklaGelsin:KampanyalarGelAl>
+    <TiklaGelsin:SiparislerimGelAl Title="Siparişlerim" IconImageSource=""></TiklaGelsin:SiparislerimGelAl>
+    <TiklaGelsin:HesabimGelAl Title="Hesabım" IconImageSource=""></TiklaGelsin:HesabimGelAl>
+</TabbedPage>
