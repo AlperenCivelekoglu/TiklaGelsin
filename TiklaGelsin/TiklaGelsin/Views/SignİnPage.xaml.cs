@@ -10,16 +10,16 @@ using Xamarin.Forms.Xaml;
 namespace TiklaGelsin.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class SignUpPage : ContentPage
+    public partial class SignİnPage : ContentPage
     {
-        public SignUpPage()
+        public SignİnPage()
         {
             InitializeComponent();
         }
 
         private void Btn_Kyt_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new LoginPage());
+            //Navigation.PushModalAsync(new SignUpPage());
         }
     }
 }

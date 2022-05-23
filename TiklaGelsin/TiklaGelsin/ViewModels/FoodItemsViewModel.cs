@@ -90,7 +90,7 @@ namespace TiklaGelsin.ViewModels
 
         private async Task SearchViewAsync()
         {
-            //await Application.Current.MainPage.Navigation.PushModalAsync(new AramaSonuclari(SearchText));
+            await Application.Current.MainPage.Navigation.PushModalAsync(new AramaSonuclari(SearchText));
         }
 
         private async Task LogoutAsync()

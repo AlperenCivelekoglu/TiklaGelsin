@@ -35,7 +35,7 @@ namespace TiklaGelsin.Views
 
         private void Btn_giris_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new SignUpPage());
+            Navigation.PushModalAsync(new SignİnPage());
         }
 
         private void Btn_kayıt_Clicked(object sender, EventArgs e)

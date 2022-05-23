@@ -40,3 +40,5 @@ D:\DERS\2.sınıf\2.Dönem\OOP2\deneme\TiklaGelsinProje\TiklaGelsin\TiklaGelsin\
 D:\DERS\2.sınıf\2.Dönem\OOP2\deneme\TiklaGelsinProje\TiklaGelsin\TiklaGelsin\TiklaGelsin\bin\Debug\netstandard2.0\TiklaGelsin.pdb
 D:\DERS\2.sınıf\2.Dönem\OOP2\deneme\TiklaGelsinProje\TiklaGelsin\TiklaGelsin\TiklaGelsin\obj\Debug\netstandard2.0\XamlC.stamp
 D:\DERS\2.sınıf\2.Dönem\OOP2\deneme\TiklaGelsinProje\TiklaGelsin\TiklaGelsin\TiklaGelsin\obj\Debug\netstandard2.0\ref\TiklaGelsin.dll
+D:\DERS\2.sınıf\2.Dönem\OOP2\deneme\TiklaGelsinProje\TiklaGelsin\TiklaGelsin\TiklaGelsin\obj\Debug\netstandard2.0\Views\SignİnPage.xaml.g.cs
+D:\DERS\2.sınıf\2.Dönem\OOP2\deneme\TiklaGelsinProje\TiklaGelsin\TiklaGelsin\TiklaGelsin\obj\Debug\netstandard2.0\Views\AramaSonuclari.xaml.g.cs

@@ -186,7 +186,7 @@ namespace TiklaGelsin.ViewModels
                 if (Result)
                 {
                     Preferences.Set("Username", Username);
-                    // await Application.Current.MainPage.Navigation.PushModalAsync(new ChooseOrderPage());
+                    await Application.Current.MainPage.Navigation.PushModalAsync(new AnaSayfaSanaGelsin());
                 }
                 else
                     await Application.Current.MainPage.DisplayAlert("Hata", "Girdiğiniz Kullanıcı Adı veya Şifre Yanlış", "OK");
